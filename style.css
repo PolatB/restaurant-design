@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url("food.avif");
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pre-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.pre-nav .logo {
+    color: #026e78;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    flex: 1 auto;
+}
+
+nav li a {
+    background-color: #2d99a4;
+    padding: 1rem 2rem;
+    display: block;
+    text-align: center;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: white;
+    color: #026e78;
+}
+
+nav a.highlight {
+    background-color: #026e78;
+    color: white;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.content h1 {
+    background-color: #026e78;
+    color: white;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+.white-link {
+    background-color: white;
+    color: #026e78;
+    padding: 1rem;
+}
+
+.teal-link {
+    background-color: #026e78;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .pre-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+}
